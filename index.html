@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <h1>Caesar Cipher decrypt</h1>
-    <form action="">
+    <h1>Caesar Cipher</h1>
+    <form action="" class="container">
       <label for="Slt">Select</label>
       <select name="Slt" id="Slt" >
         <option value="Encrypt" selected="Encrypt">Encrypt</option>
@@ -18,15 +18,15 @@
       </select>
       <div>
         <label for="txt">Enter text: </label>
-        <textarea name="txt" id="txt" cols="20" rows="7">Cryptography</textarea>
+        <textarea name="txt" id="txt" cols="20" rows="7">Cryptography is fun</textarea>
       </div>
       <div>
         <label for="key" >key</label>
         <input id="key" type="text" value ="3" />
       </div>
       <div>
-        <input type="button" value="Brute Force" />
-        <input type="button" value="Encrypt" onclick="trigger()"/>
+        <input class="Brute visible" type="button" value="Brute Force" />
+        <input id="trig" type="button" value="Encrypt" onclick="trigger()">
       </div>
     </form>
     <p>

@@ -2,3 +2,12 @@
     margin: 0;
     padding: 0;
 }
+
+.container{
+    display: grid;
+    justify-content: center;
+}
+
+.visible{
+    display: none;
+}
