@@ -1,9 +1,18 @@
 let type = document.getElementById("Slt");
 let text = document.getElementById("txt");
 
+
+document.querySelector(".Brute").classList.toggle("visible");
 function change(){
-    if(type.value=="Encrypt"){
-        document.querySelector(".brute").classList.add("visible");
+    switch (type.value) {
+        case "Encrypt":
+            document.querySelector(".Brute").classList.toggle("visible");
+            document.querySelector("#trig").value="Encrypt";
+            break;
+        case "Decrypt":
+            document.querySelector(".Brute").classList.toggle("visible");
+            document.querySelector("#trig").value="Decrypt";
+            break;
     }
 }
 
