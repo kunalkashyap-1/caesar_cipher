@@ -2,15 +2,16 @@ let type = document.getElementById("Slt");
 let text = document.getElementById("txt");
 
 
-document.querySelector(".Brute").classList.toggle("visible");
+document.querySelector(".Brute").classList.add("visible");
 function change(){
     switch (type.value) {
         case "Encrypt":
-            document.querySelector(".Brute").classList.toggle("visible");
+            document.querySelector(".Brute").classList.add("visible");
             document.querySelector("#trig").value="Encrypt";
             break;
         case "Decrypt":
-            document.querySelector(".Brute").classList.toggle("visible");
+            document.querySelector(".Brute").classList.remove("visible");
+            document.querySelector("#txt").value="Fubswrjudskb lv ixq";
             document.querySelector("#trig").value="Decrypt";
             break;
     }
@@ -20,10 +21,10 @@ function trigger() {
     let key = Number(document.getElementById("key").value);
     switch (type.value) {
         case "Encrypt":
-            document.querySelector(".crack").innerHTML=cipher(text.value,key); 
+            document.querySelector(".crack").innerHTML="Encrypted:- "+cipher(text.value,key); 
             break;
         case "Decrypt":
-            document.querySelector(".crack").innerHTML=cipher(text.value,(26 - key));
+            document.querySelector(".crack").innerHTML="Decrypted:- "+cipher(text.value,(26 - key));
             break;
     }
 }

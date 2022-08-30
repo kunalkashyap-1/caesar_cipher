@@ -11,53 +11,113 @@
   <body>
     <h1>Caesar Cipher</h1>
     <form action="" class="container">
-      <label for="Slt">Select</label>
-      <select name="Slt" id="Slt" onclick="change()" >
+      <label for="Slt"><strong>Select:</strong></label>
+      <select name="Slt" id="Slt" onclick="change()">
         <option value="Encrypt" selected="Encrypt">Encrypt</option>
         <option value="Decrypt">Decrypt</option>
       </select>
-      <div>
+      <div class="container-item">
         <label for="txt">Enter text: </label>
-        <textarea name="txt" id="txt" cols="20" rows="7">Cryptography is fun</textarea>
+        <textarea name="txt" id="txt" cols="18" rows="7">Cryptography is fun</textarea>
       </div>
-      <div>
-        <label for="key" >key</label>
-        <input id="key" type="text" value ="3" />
+      <div class="container-item">
+        <label for="key">key</label>
+        <input id="key" type="text" value="3" />
       </div>
-      <div>
-        <input class="Brute" type="button" value="Brute Force" onclick="brute_force()"/>
-        <input id="trig" type="button" value="Encrypt" onclick="trigger()">
+      <div class="container-btn">
+        <input
+          class="Brute"
+          type="button"
+          value="Brute Force"
+          onclick="brute_force()"
+        />
+        <input id="trig" type="button" value="Encrypt" onclick="trigger()" />
       </div>
-      <p class = "crack"></p>
+     
     </form>
+    <p class="crack"></p>
     <table>
-        <tr><td class="result"></td></tr>
-        <tr><td class="result"></td></tr>
-        <tr><td class="result"></td></tr>
-        <tr><td class="result"></td></tr>
-        <tr><td class="result"></td></tr>
-        <tr><td class="result"></td></tr>
-        <tr><td class="result"></td></tr>
-        <tr><td class="result"></td></tr>
-        <tr><td class="result"></td></tr>
-        <tr><td class="result"></td></tr>
-        <tr><td class="result"></td></tr>
-        <tr><td class="result"></td></tr>
-        <tr><td class="result"></td></tr>
-        <tr><td class="result"></td></tr>
-        <tr><td class="result"></td></tr>
-        <tr><td class="result"></td></tr>
-        <tr><td class="result"></td></tr>
-        <tr><td class="result"></td></tr>
-        <tr><td class="result"></td></tr>
-        <tr><td class="result"></td></tr>
-        <tr><td class="result"></td></tr>
-        <tr><td class="result"></td></tr>
-        <tr><td class="result"></td></tr>
-        <tr><td class="result"></td></tr>
-        <tr><td class="result"></td></tr>
-        <tr><td class="result"></td></tr>
-        <tr><td class="result"></td></tr>
+      <tr>
+        <td class="result"></td>
+      </tr>
+      <tr>
+        <td class="result"></td>
+      </tr>
+      <tr>
+        <td class="result"></td>
+      </tr>
+      <tr>
+        <td class="result"></td>
+      </tr>
+      <tr>
+        <td class="result"></td>
+      </tr>
+      <tr>
+        <td class="result"></td>
+      </tr>
+      <tr>
+        <td class="result"></td>
+      </tr>
+      <tr>
+        <td class="result"></td>
+      </tr>
+      <tr>
+        <td class="result"></td>
+      </tr>
+      <tr>
+        <td class="result"></td>
+      </tr>
+      <tr>
+        <td class="result"></td>
+      </tr>
+      <tr>
+        <td class="result"></td>
+      </tr>
+      <tr>
+        <td class="result"></td>
+      </tr>
+      <tr>
+        <td class="result"></td>
+      </tr>
+      <tr>
+        <td class="result"></td>
+      </tr>
+      <tr>
+        <td class="result"></td>
+      </tr>
+      <tr>
+        <td class="result"></td>
+      </tr>
+      <tr>
+        <td class="result"></td>
+      </tr>
+      <tr>
+        <td class="result"></td>
+      </tr>
+      <tr>
+        <td class="result"></td>
+      </tr>
+      <tr>
+        <td class="result"></td>
+      </tr>
+      <tr>
+        <td class="result"></td>
+      </tr>
+      <tr>
+        <td class="result"></td>
+      </tr>
+      <tr>
+        <td class="result"></td>
+      </tr>
+      <tr>
+        <td class="result"></td>
+      </tr>
+      <tr>
+        <td class="result"></td>
+      </tr>
+      <tr>
+        <td class="result"></td>
+      </tr>
     </table>
     <script src="index.js"></script>
   </body>
