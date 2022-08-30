@@ -3,10 +3,17 @@ let text = document.getElementById("txt");
 
 
 document.querySelector(".Brute").classList.add("visible");
+
+document.querySelector("#Slt").addEventListener("click",change);
+document.querySelector(".Brute").addEventListener("click",brute_force);
+document.querySelector("#trig").addEventListener("click",trigger);
+
+
 function change(){
     switch (type.value) {
         case "Encrypt":
             document.querySelector(".Brute").classList.add("visible");
+            document.querySelector("#txt").value="Cryptography is fun";
             document.querySelector("#trig").value="Encrypt";
             break;
         case "Decrypt":

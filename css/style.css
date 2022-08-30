@@ -26,6 +26,7 @@ p{
     margin: 2rem;
 }
 .container{
+    margin: 8vh;
     display: grid;
     justify-content: center;
     gap: 1rem;
