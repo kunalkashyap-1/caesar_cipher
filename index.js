@@ -1,9 +1,20 @@
 let type = document.getElementById("Slt");
 
 
-function cipher() {
-    let text = document.getElementById("txt").value;
+function trigger() {
     let key = Number(document.getElementById("key").value);
+    switch (type.value) {
+        case "Encrypt":
+            cipher(key);
+            break;
+        case "Decrypt":
+            cipher((26 - key));
+            break;
+    }
+}
+
+function cipher(key) {
+    let text = document.getElementById("txt").value;
     let res = "";
     for (let i = 0; i < text.length; i++) {
         let char = text[i];
