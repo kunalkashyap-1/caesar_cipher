@@ -1,15 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cypher</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cipher</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>Caesar Cipher decrypt</h1>
+    <form action="">
+      <label for="Slt">Select</label>
+      <select name="Slt" id="Slt" onclick="test()">
+        <option value="Encrypt" selected="Encrypt">Encrypt</option>
+        <option value="Decrypt">Decrypt</option>
+      </select>
+      <div>
+        <label for="txt">Enter text: </label>
+        <textarea name="txt" id="txt" cols="20" rows="7">Cryptography</textarea>
+      </div>
+      <div>
+        <label for="key" >key</label>
+        <input id="key" type="text" value ="3" />
+      </div>
+      <div>
+        <input type="button" value="Brute Force" />
+        <input type="button" value="Encrypt" onclick="cipher()"/>
+      </div>
+    </form>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aut
+      excepturi, possimus numquam quod facilis perferendis cupiditate! Minus non
+      veniam odit incidunt corrupti impedit quibusdam! Omnis facilis quibusdam
+      voluptatibus obcaecati?
+    </p>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
