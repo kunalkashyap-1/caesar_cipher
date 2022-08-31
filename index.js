@@ -38,7 +38,7 @@ function trigger() {
 
 function cipher(text,key) {
 
-    if(key<0){
+    if(key<0 || key>26){
         return "Enter valid key";
     }
 
