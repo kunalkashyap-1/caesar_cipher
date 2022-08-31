@@ -38,6 +38,10 @@ function trigger() {
 
 function cipher(text,key) {
 
+    if(key<0){
+        return "Enter valid key";
+    }
+
     let res = "";
     for (let i = 0; i < text.length; i++) {
         let char = text[i];
